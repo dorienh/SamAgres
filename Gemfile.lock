@@ -157,8 +157,8 @@ PLATFORMS
   x86_64-linux-musl
 
 DEPENDENCIES
-  jekyll
-  minima
+  jekyll (~> 4.4.1)
+  minima (~> 2.5.2)
 
 BUNDLED WITH
    2.6.8
