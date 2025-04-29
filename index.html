@@ -25,7 +25,7 @@ title: Sam Agres' Paintings
   {% assign featured = images[index] %}
   
   {% if featured %}
-    <img src="{{ featured.path }}" alt="Featured Painting" />
+    <img src="{{ site.baseurl }}{{ featured.path }}" alt="Featured Painting" />
   {% endif %}
 </div>
 
@@ -37,8 +37,8 @@ title: Sam Agres' Paintings
 <div id="gallery">
   {% for file in site.static_files %}
     {% if file.path contains '/gallery/' and file.extname == '.jpg' %}
-      <a href="{{ file.path }}" class="glightbox">
-        <img src="{{ file.path }}">
+      <a href="{{ site.baseurl }}{{ file.path }}" class="glightbox">
+        <img src="{{ site.baseurl }}{{ file.path }}">
       </a>
     {% endif %}
   {% endfor %}
