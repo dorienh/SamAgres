@@ -1,0 +1,47 @@
+---
+layout: default
+title: Sam Agres' Paintings
+---
+
+
+<div class="content">
+
+<h1>Sam Agres' Paintings</h1>
+
+<p>Sam Agres was a prolific painter based in Fort Wayne, Indiana, whose dedication to his craft resulted in a remarkable body of work exceeding 3,000 pieces. His paintings, often rooted in the landscapes and life of the Midwest, reflect a deep connection to his surroundings and a disciplined artistic practice. Over the decades, Sam’s work resonated with local communities and was featured in exhibitions such as those hosted by the Wunderkammer Company.</p>
+
+<p> This website hosts a curated selection of approximately 800 of Sam’s paintings, serving as a tribute to his creative spirit. Through this digital gallery, we aim to preserve and share his legacy with art enthusiasts and the broader public.</p>
+
+<p style="font-size: 10px; font-style: italic">This website is in progress, paintings will be cropped and rotated soon.</p>
+
+
+
+<h2>Painting of the Day</h2>
+
+<div class="featured">
+  {% assign today = 'now' | date: "%Y%m%d" %}
+  {% assign images = site.static_files | where_exp: "file", "file.path contains '/gallery/' and file.extname == '.jpg'" %}
+  {% assign index = today | modulo: images.size %}
+  {% assign featured = images[index] %}
+  
+  {% if featured %}
+    <img src="{{ featured.path }}" alt="Featured Painting" />
+  {% endif %}
+</div>
+
+
+<h2>Gallery of selected paintings</h2>
+
+
+
+<div id="gallery">
+  {% for file in site.static_files %}
+    {% if file.path contains '/gallery/' and file.extname == '.jpg' %}
+      <a href="{{ file.path }}" class="glightbox">
+        <img src="{{ file.path }}">
+      </a>
+    {% endif %}
+  {% endfor %}
+</div>
+
+</div>

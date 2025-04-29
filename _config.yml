@@ -1,0 +1,12 @@
+title: Sam Agres' Paintings
+theme: minima  # You can change later
+plugins:
+  - jekyll-feed
+
+# GitHub Pages needs this
+defaults:
+  - scope:
+      path: ""
+      type: "static_files"
+    values:
+      sitemap: false
