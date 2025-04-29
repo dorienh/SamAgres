@@ -1,5 +1,7 @@
 # SamAgres
-Painting collection by Sam Agres
+Painting collection by Sam Agres. 
+
+[Website deployed here. ](https://dorienh.github.io/SamAgres/)
 
 
 ## To do
