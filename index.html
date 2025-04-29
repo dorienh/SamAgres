@@ -25,7 +25,9 @@ title: Sam Agres' Paintings
   {% assign featured = images[index] %}
   
   {% if featured %}
+  <a href="{{ site.baseurl }}{{ featured.path }}" class="glightbox">
     <img src="{{ site.baseurl }}{{ featured.path }}" alt="Featured Painting" />
+  </a>
   {% endif %}
 </div>
 
