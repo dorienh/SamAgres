@@ -9,3 +9,4 @@ Painting collection by Sam Agres
 - adjust website to deal with above
 - add share buttons
 - add contact/more info on website
+- add jekyll pagination (based on list of files)
