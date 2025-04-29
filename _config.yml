@@ -10,3 +10,5 @@ defaults:
       type: "static_files"
     values:
       sitemap: false
+
+baseurl: "/SamAgres"
