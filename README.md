@@ -1,2 +1,11 @@
 # SamAgres
 Painting collection by Sam Agres
+
+
+## To do
+- upload KA photos
+- crop and rotate
+- sort landscape/portrait
+- adjust website to deal with above
+- add share buttons
+- add contact/more info on website
