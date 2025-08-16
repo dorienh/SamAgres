@@ -11,3 +11,5 @@ Painting collection by Sam Agres.
 - add share buttons
 - add contact/more info on website
 - add jekyll pagination (based on list of files)
+
+Coming soon!
