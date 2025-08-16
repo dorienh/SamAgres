@@ -5,7 +5,6 @@ Painting collection by Sam Agres.
 
 
 ## To do
-- upload KA photos
 - crop and rotate
 - sort landscape/portrait
 - adjust website to deal with above
